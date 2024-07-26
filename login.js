@@ -23,7 +23,7 @@ function logout(){
   loginInfo.classList.add("hidden");
 }
 
-function chkId(e){
+function chkId(){
   if(localStorage.getItem("id") !== null){
     loginForm.classList.add("hidden");
     loginInfo.classList.remove("hidden");
