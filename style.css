@@ -9,11 +9,12 @@ body{
   display: flex;
   border-radius: 10px;
   padding: 10px;
-  border: 1px solid black;
   color: black;
   font: 30px NanumGothic, sans-serif;
   align-items: center;
   justify-content: center;
+  background-color: aquamarine;
+
 }
 
 input{
@@ -22,6 +23,26 @@ input{
   margin: 10px;
 }
 
+
 form{
+  margin: 20px;
+}
+
+button{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hidden{
+  display: none;
+}
+
+#loginInfo{
+  margin: 20px;
+}
+
+#userInfo{
+  font: 15px NanumGothic, sans-serif;
+  display: inline-block;
   margin: 20px;
 }

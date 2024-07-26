@@ -7,10 +7,15 @@
   </head>
   <body>
     <div id="clock"></div>
-    <form>
-      <input type="text" placeholder="id">
-      <input type="password" placeholder="password">
+    <form id="loginForm">
+      <input required type="text" id="id" placeholder="id">
+      <button id="loginBtn">로그인</button>
     </form>
+    <div id="loginInfo" class="hidden">
+      <p id="userInfo"></p>
+      <button id="logoutBtn">로그아웃</button>
+    </div>
     <script src="clock.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>
