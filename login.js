@@ -24,7 +24,7 @@ function logout(){
 }
 
 function chkId(e){
-  if(localStorage.getItem("id") !== undefined){
+  if(localStorage.getItem("id") !== null){
     loginForm.classList.add("hidden");
     loginInfo.classList.remove("hidden");
     userInfo.innerHTML = `${localStorage.getItem("id")}님 환영합니다.`;
