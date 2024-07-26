@@ -29,7 +29,6 @@ body{
   margin: 10px;
 }
 
-
 form#loginForm{
   margin: 20px;
 }
@@ -37,6 +36,9 @@ form#loginForm{
 #loginBtn, #logoutBtn{
   padding: 10px;
   border-radius: 10px;
+}
+#loginBtn:hover, #logoutBtn:hover{
+  background-color: rgb(187, 187, 187);
 }
 
 .hidden{
@@ -71,6 +73,9 @@ div#todo{
   width: 100%;
   border: none;
 }
+#todoForm > input:hover{
+  background-color: aliceblue;
+}
 
 ul{
   padding: 0;
@@ -101,4 +106,8 @@ li > button{
   font-weight: 1000;
   color: red;
   background-color: white;
+}
+
+li > button:hover{
+  background-color: rgb(192, 192, 192);
 }
