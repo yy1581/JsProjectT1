@@ -5,6 +5,12 @@ const logoutBtn = document.querySelector("#logoutBtn");
 const loginInfo = document.querySelector("#loginInfo");
 const userInfo = document.querySelector("#userInfo");
 
+function activeLoginInfo(){
+  loginForm.classList.add("hidden");
+  loginInfo.classList.remove("hidden");
+  userInfo.textContent = `${localStorage.getItem("id")}님 환영합니다.`;
+}
+
 function login(e){
   e.preventDefault();
   if(id.value === ""){
@@ -12,9 +18,8 @@ function login(e){
     return;
   }
   localStorage.setItem("id", id.value);
-  loginForm.classList.add("hidden");
-  loginInfo.classList.remove("hidden");
-  userInfo.innerHTML = `${localStorage.getItem("id")}님 환영합니다.`;
+  id.value = "";
+  activeLoginInfo();
 }
 
 function logout(){
@@ -25,9 +30,7 @@ function logout(){
 
 function chkId(){
   if(localStorage.getItem("id") !== null){
-    loginForm.classList.add("hidden");
-    loginInfo.classList.remove("hidden");
-    userInfo.innerHTML = `${localStorage.getItem("id")}님 환영합니다.`;
+    activeLoginInfo();
   }
 }
 
