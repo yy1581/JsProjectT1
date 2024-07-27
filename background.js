@@ -8,6 +8,6 @@ function randomRGB() {
 const body = document.body;
 
 function chgBackColor() {
-  body.style.backgroundImage = `linear-gradient(${randomRGB()}, ${randomRGB()})`;
+  body.style.backgroundImage = `radial-gradient(${randomRGB()}, ${randomRGB()})`;
 }
 chgBackColor();
